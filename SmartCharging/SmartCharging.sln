@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCharging", "SmartCharging\SmartCharging.csproj", "{FE0FB591-88B7-4C84-BED7-D4C498A778B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCharging.Domain", "SmartCharging.Domain\SmartCharging.Domain.csproj", "{2BBB8D58-1D72-4CC3-B5DE-9ACE1E10A488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCharging.Infrastructure", "SmartCharging.Infrastructure\SmartCharging.Infrastructure.csproj", "{8AEC04E3-AE53-4780-B81F-2257B8C2CFF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCharging.Application", "SmartCharging.Application\SmartCharging.Application.csproj", "{B2DC26FC-1655-443D-839D-6840FB9511E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE0FB591-88B7-4C84-BED7-D4C498A778B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0FB591-88B7-4C84-BED7-D4C498A778B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0FB591-88B7-4C84-BED7-D4C498A778B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0FB591-88B7-4C84-BED7-D4C498A778B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BBB8D58-1D72-4CC3-B5DE-9ACE1E10A488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBB8D58-1D72-4CC3-B5DE-9ACE1E10A488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBB8D58-1D72-4CC3-B5DE-9ACE1E10A488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BBB8D58-1D72-4CC3-B5DE-9ACE1E10A488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AEC04E3-AE53-4780-B81F-2257B8C2CFF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AEC04E3-AE53-4780-B81F-2257B8C2CFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AEC04E3-AE53-4780-B81F-2257B8C2CFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AEC04E3-AE53-4780-B81F-2257B8C2CFF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2DC26FC-1655-443D-839D-6840FB9511E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2DC26FC-1655-443D-839D-6840FB9511E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2DC26FC-1655-443D-839D-6840FB9511E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2DC26FC-1655-443D-839D-6840FB9511E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18709755-07BB-47AD-93E9-F21DC0264C5A}
+	EndGlobalSection
+EndGlobal
