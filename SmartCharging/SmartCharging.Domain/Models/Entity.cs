@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartCharging.Application.Contracts
+namespace SmartCharging.Domain.Models
 {
-    public interface IChargeStationRepository
+    public abstract class Entity
     {
     }
 }

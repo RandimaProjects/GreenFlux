@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace SmartCharging.Domain.Models
 {
-    public class ChargeStation
+    public class ChargeStation : Entity
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public int GroupId { get; set; }
         public Group Group { get; set; }
-        IEnumerable<Connector> Connectors { get; set; }
+        public IEnumerable<Connector> Connectors { get; set; }
     }
 }

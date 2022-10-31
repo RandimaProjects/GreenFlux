@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartCharging.Application.Contracts
+namespace SmartCharging.Application.Contracts.Repository
 {
-    public interface IGroupRepository
+    public interface IConnectorRepository
     {
     }
 }

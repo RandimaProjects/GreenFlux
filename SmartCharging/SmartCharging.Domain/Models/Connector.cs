@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmartCharging.Domain.Models
 {
-    public class Connector
+    public class Connector : Entity
     {
         public int Id { get; set; }
         public int ChargeStationId { get; set; }
