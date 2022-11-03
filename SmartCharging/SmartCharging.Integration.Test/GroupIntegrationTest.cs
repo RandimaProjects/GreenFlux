@@ -19,10 +19,8 @@ namespace SmartCharging.Integration.Test
             var context = new SmartChargingDBContext(_options);
             context.Database.EnsureDeleted();
             SmartChargingIntegrationtestHelper.CreateDataBaseEfCoreInMemory(_options);
-
-           
-
         }
+
         [SetUp]
         public void Setup()
         {
