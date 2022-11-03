@@ -44,5 +44,5 @@ Make sure you have installed the following to run the project:
 #### Run in Local
 - Download/Checkout the code ("Master" branch)
 - Open the project from visual studio 2022
-- Check the appsettings.json for the connection string and update it to yours(GreenFlux\SmartCharging\SmartCharging\appsettings.json)
+- Check the appsettings.json for the connection string and update it to yours(SmartCharging\SmartCharging\appsettings.json)
 - Build & Run the project (you should be able to view the open API documentation through Swagger)
