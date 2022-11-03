@@ -18,6 +18,12 @@ namespace SmartCharging.Infrastructure.Mappings
             builder.Property(b => b.MaxCurrent)
                 .IsRequired()
                 .HasColumnType("decimal");
+
+            builder.HasData(
+                new Connector { Id = 1, MaxCurrent = 50, ChargeStationId = 1},
+                new Connector { Id = 2, MaxCurrent = 60, ChargeStationId = 2 },
+                new Connector { Id = 3, MaxCurrent = 20, ChargeStationId = 3 }
+            );
         }
     }
 }

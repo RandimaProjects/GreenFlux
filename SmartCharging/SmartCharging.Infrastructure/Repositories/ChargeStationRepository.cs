@@ -10,15 +10,33 @@ using SmartCharging.Infrastructure.Context;
 
 namespace SmartCharging.Infrastructure.Repositories
 {
-    public class ChargeStationRepository: Repository<ChargeStation>, IChargeStationRepository
+    public class ChargeStationRepository : Repository<ChargeStation>, IChargeStationRepository
     {
-        public ChargeStationRepository(SmartChargingDBContext context) : base(context) { }
+        public ChargeStationRepository(SmartChargingDBContext context) : base(context)
+        {
+        }
 
         public override async Task<List<ChargeStation>> GetAll()
         {
-            return await Db.ChargeStation.AsNoTracking().Include(b => b.Group)
+            return await Db.ChargeStation.AsNoTracking()
                 .OrderBy(b => b.Name)
                 .ToListAsync();
         }
+
+        public override async Task<ChargeStation> GetById(int Id)
+        {
+            return await Db.ChargeStation.AsNoTracking().Include(c => c.Connectors)
+                .Where(g => g.Id == Id)
+                .SingleOrDefaultAsync(); ;
+        }
+
+        public List<ChargeStation> GetAllWithConnectors(int groupId)
+        {
+            return Db.ChargeStation.AsNoTracking().Include(c => c.Connectors)
+                .Where(g => g.GroupId == groupId)
+                .ToList(); ;
+
+        }
+        
     }
 }

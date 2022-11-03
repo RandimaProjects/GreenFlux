@@ -14,5 +14,6 @@ namespace SmartCharging.Application.Contracts.Services
         Task<Connector> Add(Connector connector);
         Task<Connector> Update(Connector connector);
         Task<bool> Remove(Connector connector);
+        decimal GetTotalMaxCurrent(int groupId);
     }
 }

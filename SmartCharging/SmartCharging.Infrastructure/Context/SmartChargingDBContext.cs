@@ -5,12 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SmartCharging.Domain.Models;
+using SmartCharging.Infrastructure.Mappings;
 
 namespace SmartCharging.Infrastructure.Context
 {
     public class SmartChargingDBContext : DbContext
     {
-        public SmartChargingDBContext(DbContextOptions options) : base(options) { }
+        public SmartChargingDBContext(DbContextOptions options) : base(options)
+        {
+            Database.EnsureCreated();
+
+        }
 
         public DbSet<Group> Group { get; set; }
         public DbSet<ChargeStation> ChargeStation { get; set; }
@@ -29,6 +34,9 @@ namespace SmartCharging.Infrastructure.Context
 
 
             }
+
+            builder.ApplyConfigurationsFromAssembly(typeof(GroupMapping).Assembly);
+           
         }
     }
 }

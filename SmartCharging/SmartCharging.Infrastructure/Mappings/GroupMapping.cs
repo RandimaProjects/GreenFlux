@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,11 @@ namespace SmartCharging.Infrastructure.Mappings
                 .HasColumnType("varchar(150)");
 
             builder.ToTable("Group");
+
+            builder.HasData(
+                new Group { Id = 1, Name = "Colombo", Capacity = 100 },
+                new Group { Id = 2, Name = "Kandy", Capacity = 200 }
+            );
         }
     }
 }

@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCharging", "SmartCharging\SmartCharging.csproj", "{FE0FB591-88B7-4C84-BED7-D4C498A778B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartCharging", "SmartCharging\SmartCharging.csproj", "{FE0FB591-88B7-4C84-BED7-D4C498A778B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCharging.Domain", "SmartCharging.Domain\SmartCharging.Domain.csproj", "{2BBB8D58-1D72-4CC3-B5DE-9ACE1E10A488}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartCharging.Domain", "SmartCharging.Domain\SmartCharging.Domain.csproj", "{2BBB8D58-1D72-4CC3-B5DE-9ACE1E10A488}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCharging.Infrastructure", "SmartCharging.Infrastructure\SmartCharging.Infrastructure.csproj", "{8AEC04E3-AE53-4780-B81F-2257B8C2CFF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartCharging.Infrastructure", "SmartCharging.Infrastructure\SmartCharging.Infrastructure.csproj", "{8AEC04E3-AE53-4780-B81F-2257B8C2CFF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCharging.Application", "SmartCharging.Application\SmartCharging.Application.csproj", "{B2DC26FC-1655-443D-839D-6840FB9511E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartCharging.Application", "SmartCharging.Application\SmartCharging.Application.csproj", "{B2DC26FC-1655-443D-839D-6840FB9511E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E162DCD3-D639-4C35-9528-24D7FE7513CF}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

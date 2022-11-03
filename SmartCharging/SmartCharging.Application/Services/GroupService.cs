@@ -42,6 +42,7 @@ namespace SmartCharging.Application.Services
         {
             if (_groupRepository.Search(b => b.Name == group.Name && b.Id != group.Id).Result.Any())
                 return null;
+            
 
             await _groupRepository.Update(group);
             return group;

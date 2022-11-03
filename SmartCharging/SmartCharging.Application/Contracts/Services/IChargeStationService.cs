@@ -10,6 +10,7 @@ namespace SmartCharging.Application.Contracts.Services
     public interface IChargeStationService : IDisposable
     {
         Task<IEnumerable<ChargeStation>> GetAll();
+        List<ChargeStation> GetAllWithConnectors(int groupId);
         Task<ChargeStation> GetById(int id);
         Task<ChargeStation> Add(ChargeStation chargeStation);
         Task<ChargeStation> Update(ChargeStation chargeStation);
