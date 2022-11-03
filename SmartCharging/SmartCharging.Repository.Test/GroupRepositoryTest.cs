@@ -59,11 +59,11 @@ namespace SmartCharging.Repository.Test
 
         private List<Group> CreateGroupList()
         {
-            var books = new List<Group>();
-            books.Add(new Group { Id = 1, Name = "Group1", Capacity = 100 });
-            books.Add(new Group { Id = 2, Name = "Group2", Capacity = 50 });
+            var group = new List<Group>();
+            group.Add(new Group { Id = 1, Name = "Group1", Capacity = 100 });
+            group.Add(new Group { Id = 2, Name = "Group2", Capacity = 50 });
 
-            return books;
+            return group;
         }
     }
 }
