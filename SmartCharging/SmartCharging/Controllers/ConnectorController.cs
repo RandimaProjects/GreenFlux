@@ -41,7 +41,7 @@ namespace SmartCharging.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(ConnectorDto connectorDto)
+        public async Task<IActionResult> Post(ConnectorAddDto connectorDto)
         {
             try
             {

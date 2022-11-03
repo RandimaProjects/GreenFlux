@@ -16,6 +16,8 @@ namespace SmartCharging.Controllers
         private readonly IGroupService _groupService;
         private readonly IMapper _mapper;
 
+        private const int MAX_CHARGESTATION_COUNT = 5;
+
         public ChargeStationController(IChargeStationService chargeStationService, IMapper mapper, IGroupService groupService
             , IConnectorService connectorService)
         {
@@ -40,7 +42,7 @@ namespace SmartCharging.Controllers
                 if (!ModelState.IsValid) return BadRequest();
 
                 var group = _groupService.GetById(chargeStationDto.GroupId).Result;
-                if(group == null || group.ChargeStations.Count() == 5) return BadRequest("Group charge station count exceeds.");
+                if(group == null || group.ChargeStations.Count() == MAX_CHARGESTATION_COUNT) return BadRequest("Group charge station count exceeds.");
 
                 if (group.ChargeStations.Any())
                 {
@@ -53,7 +55,6 @@ namespace SmartCharging.Controllers
                 }
 
                 var chargeStation = new ChargeStation() { GroupId = group.Id, Name = chargeStationDto.Name };
-
                 var reult = await _chargeStationService.Add(chargeStation);
 
                 await _connectorService.Add(new Connector
@@ -67,7 +68,6 @@ namespace SmartCharging.Controllers
             }
         }
 
-        // PUT api/<ChargeStationController>/5
         [HttpPut]
         public async Task<IActionResult> Put(ChargeStationEditDto chargeStationDto)
         {

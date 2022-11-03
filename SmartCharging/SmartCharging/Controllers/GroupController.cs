@@ -75,17 +75,12 @@ namespace SmartCharging.Controllers
                 if (group.ChargeStations.Any())
                 {
                     var totalMaxCurrent = _connectorService.GetTotalMaxCurrent(group.Id);
-
                     if (group.Capacity < totalMaxCurrent) return BadRequest("Group capacity should be greater than " + totalMaxCurrent);
                 }
-                
-
 
                 group.Name = groupDto.Name;
                 group.Capacity = groupDto.Capacity;
-
-
-                var result = _groupService.Update(group);
+                await _groupService.Update(group);
 
                 return Ok();
             }

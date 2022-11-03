@@ -27,7 +27,7 @@ namespace SmartCharging.Infrastructure.Repositories
         {
             return await Db.Group.Include(c => c.ChargeStations)
                 .Where(c => c.Id == id)
-                .SingleOrDefaultAsync();
+                .FirstOrDefaultAsync();
         }
     }
 }
