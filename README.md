@@ -1,5 +1,8 @@
 # Green Flux - Smart Charging System
 
+## Problem to be be implement
+
+![image](https://user-images.githubusercontent.com/11566992/201849059-1ef67ce6-bd38-4634-be0a-174bbe32ef2e.png)
 
 ## Technologies used in the project
 - .Net 6
